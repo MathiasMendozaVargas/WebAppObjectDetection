@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Restaurant website" />
+    <meta name="keywords" content="restaurant, cuisine, healthy food, fusion, modern"/>
+
+    <title>Cuisinebo</title>
+
+    <script
+      src="https://kit.fontawesome.com/30d9eca2ce.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital@0;1&family=Playfair+Display:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/12a65cce29.js" crossorigin="anonymous"></script>
+
+    <!-- Stylesheets -->
+    {% assets "scss_all" %}
+      <link rel=stylesheet type=text/css href="{{ ASSET_URL }}">
+    {% endassets %}
+  </head>
+  <body>
+    <div class="header">
+      <div class="container">
+        <h1>Online<span><i class="fa-solid fa-camera"></i></span>Object</h1>
+        <h1>Detection</h1>
+      </div>
+    </div>
+    <div class="file-choosing-sec">
+      <form method="post" action="/" enctype="multipart/form-data">
+        <label for="file">Select an image</label>
+        <input class="choose-file" type="file" name="file" autocomplete="off" required>
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+  </body>
+</html>
