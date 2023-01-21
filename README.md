@@ -1,0 +1,1 @@
+🤖Flask web app object detection, using API from Tensorflow with models already built, with stylesheet convertion from flask-scss, took me 4 hours to code, so don't judge the UI ✌️
