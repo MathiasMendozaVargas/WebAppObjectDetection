@@ -1,3 +1,11 @@
+##############################
+# OBJECT DETECTION WEB APP
+# BY: MATHIAS MENDOZA / 2023
+# pov: don't judge the UI hehe
+###############################
+
+
+# Import the libraries and tensorflow models
 import time
 from absl import app, logging
 import cv2
@@ -46,6 +54,8 @@ app.config['RESULTS_FOLDER'] = RESULTS_FOLDER
 
 assets = Environment(app)
 assets.url = app.static_url_path
+
+# Being Sassy
 scss = Bundle('base.scss', 'layout.scss', filters='pyscss', output='all.css')
 assets.register('scss_all', scss)
 
@@ -59,7 +69,7 @@ def get_Home():
 def displayResults():
     return render_template('results.html')
 
-
+# Handle page routing with Flask, and GET AND POST REQUEST
 # API that returns image with detections on it
 @app.route('/', methods= ['POST'])
 def get_image():
